@@ -58,17 +58,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'controle_estoque.wsgi.application'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': config('DB_NAME', default='controle_estoque'),
+#         'USER': config('DB_USER', default='root'),
+#         'PASSWORD': config('DB_PASSWORD', default=''),
+#         'HOST': config('DB_HOST', default='127.0.0.1'),
+#         'PORT': config('DB_PORT', default='3306'),
+#         'OPTIONS': {
+#             'charset': 'utf8mb4',
+#         },
+#     }
+# }
+# CONFIGURAÇÃO LOCAL (SUA MÁQUINA)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME', default='controle_estoque'),
-        'USER': config('DB_USER', default='root'),
-        'PASSWORD': config('DB_PASSWORD', default=''),
-        'HOST': config('DB_HOST', default='127.0.0.1'),
-        'PORT': config('DB_PORT', default='3306'),
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "mydb",
+        "USER": "root",
+        "PASSWORD": "admin",
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
     }
 }
 
