@@ -1,0 +1,98 @@
+# Diretórios e arquivos do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+.ENV
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+dist/
+build/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Arquivos de banco de dados (não versionar)
+db.sqlite3
+*.sqlite3
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.test
+
+# Arquivos de logs
+*.log
+logs/
+log/
+
+# Arquivos de mídia e estáticos gerados (se não forem parte do código-fonte)
+media/
+staticfiles/
+collectstatic/
+*.css.map
+*.js.map
+
+# Dependências (geralmente já no requirements.txt, mas evita commits acidentais)
+requirements.lock
+Pipfile.lock
+
+# Docker (se você ainda não criou os arquivos, mas é bom prevenir)
+docker-compose.override.yml
+Dockerfile.dev
+Dockerfile.prod
+
+# Arquivos de testes
+test_*.py
+*_test.py
+
+# Arquivos de cache do Django
+*.pyc
+*.pyo
+
+# Arquivos de migrações (opcional — geralmente você quer versionar migrações, mas pode ignorar se usar migrations automáticas)
+# migrations/*.py
+# migrations/*.pyc
+
+# Se você quiser ignorar *todas* as migrações (não recomendado para produção):
+# migrations/
+
+# Arquivos de relatórios gerados (CSV, Excel, PDF) — se forem gerados dinamicamente
+*.csv
+*.xlsx
+*.xls
+*.pdf
+*.ods
+
+# Arquivos de backup
+*.bak
+*.backup
